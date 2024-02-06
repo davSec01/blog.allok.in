@@ -1,24 +1,21 @@
-<!-- const harga = "8000";
+<!-- const jadwalSiswa = [
+    {hari: "Senin", jam: "07:00", kelas: "XI RPL"},
+    {hari: "Selasa", jam: "08:00", kelas: "XI MM"},
+    {hari: "Rabu", jam: "09:00", kelas: "XI TKJ"},
+    {hari: "Kamis", jam: "10:00", kelas: "XI MM"},
+    {hari: "Jumat", jam: "11:00", kelas: "XI RPL"},
+];
 
-const barangList = {
-  1000: "SAMPO",
-  9000: "BERAS",
-  8000: "ODOL",
-  2000: "GARAM",
-  3000: "SANTEN",
-};
-
-function namaBarang(harga) {
-  for (let key in barangList) {
-    if (harga == key) {
-      return barangList[key];
-    }
-  }
-  return "STOCK BARANG SUDAH ABIS";
+const cariJadwal = (hari, callback) => {
+    const jadwal = jadwalSiswa.find(jadwal => jadwal.hari === hari);
+    callback(jadwal);
 }
 
-const barang = namaBarang(harga);
-console.log(`Harga Barang ${harga}, Nama Barang ${barang}`); -->
+const hari = "Minggu";
+cariJadwal(hari, (jadwal) => {
+    if(jadwal) console.log(`Hari: ${jadwal.hari}, Jam: ${jadwal.jam}, Kelas: ${jadwal.kelas}`);
+    else console.log("Jadwal tidak ditemukan");
+}); -->
 
 <html>
 <head>
